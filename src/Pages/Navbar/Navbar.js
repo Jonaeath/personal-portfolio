@@ -6,7 +6,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
-
+import EmailIcon from '@mui/icons-material/Email';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 export default function Navbar() {
@@ -24,14 +25,16 @@ export default function Navbar() {
 
         <Box sx={{ flexGrow: 1 }}>
             <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{textAlign:'center'}} >
-                <Grid xs={6}>
-                    <Typography variant="h6" component="div" sx={{pt:'.75rem', fontWeight:'700' }}>
+                <Grid xs={6} display='flex'  alignItems = "center" justifyContent='center'>
+                    <PersonIcon  sx={{pr:'.25rem'}} />
+                    <Typography variant="h6" component="div" sx={{fontWeight:'700' }}>
                        JONAEATH HOSSIN
                    </Typography>
 
                 </Grid>
-                <Grid xs={6}>
-                    <Typography variant="h6" component="Box" sx={{ pr: '2rem',fontWeight:'700' }}>
+                <Grid xs={6} display='flex' alignItems = "center" justifyContent='center'>
+                <EmailIcon sx={{pr:'.25rem'}}/>
+                    <Typography variant="h6" component="div" sx={{ pr: '1.25rem',fontWeight:'700' }}>
                         jonaeathbcc18@gmail.com
                     </Typography>
                     <IconButton
@@ -42,7 +45,7 @@ export default function Navbar() {
                         onClick={handleMenu}
                         color="inherit"
                     >
-                        <MenuIcon />
+                        <MenuIcon/>
                     </IconButton>
 
                     <Menu
