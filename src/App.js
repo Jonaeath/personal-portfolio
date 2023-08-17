@@ -1,10 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
-    <div className="">
-      <h1>This is Jonaeath</h1>
-    </div>
+    <BrowserRouter>
+    
+    <section id="home">
+    <Home/>
+    </section>
+  
+   
+   
+    
+    </BrowserRouter>
   );
 }
 
