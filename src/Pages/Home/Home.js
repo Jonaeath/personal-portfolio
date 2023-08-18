@@ -13,8 +13,7 @@ const Home = () => {
         }}>
            <Navbar></Navbar>
            <Banner></Banner>
-           </Box>
-    
+           </Box>   
         </section>
     );
 };

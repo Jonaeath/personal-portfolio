@@ -4,12 +4,13 @@ import img1 from '../../../Photo/Jonaeath.png';
 import Image from 'mui-image';
 import Grid from '@mui/material/Grid';
 import './Banner.css';
+import BelowArrrow from '../BelowArrow/BelowArrrow';
 
 const Banner = () => {
 
   return (
-    <Box sx={{ flexGrow: 1, mt: '4rem'}}>
-      <Grid container align = "center" justify = "center" alignItems = "center" columns={{ xs: 4, sm: 8, md: 12 }} sx={{ mt: '6rem' }}>
+    <Box sx={{ flexGrow: 1, mt: '4rem' }}>
+      <Grid container align="center" justify="center" alignItems="center" columns={{ xs: 4, sm: 8, md: 12 }} sx={{ mt: '6rem' }}>
         <Grid xs={6}>
           <Typography sx={{ textAlign: 'center', fontSize: '2rem' }}>
             HI, I AM A FULL-STACK Developer
@@ -33,8 +34,11 @@ const Banner = () => {
             <Image sx={{ border: 10, borderRadius: '50%' }} src={img1} alt='' />
           </Box>
         </Grid>
-      </Grid>
+      </Grid>  
+      <BelowArrrow/>
     </Box>
+
+
   );
 };
 
