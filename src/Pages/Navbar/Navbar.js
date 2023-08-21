@@ -64,9 +64,9 @@ export default function Navbar() {
                         onClose={handleClose}
                     >
                         <Box>
-                            <Link to='banner'><>Banner</></Link>
+                            <Link to='home'>Home</Link>
                             <br />
-                            <Link to='home'>home</Link>
+                            <Link to='aboutme'>About Me</Link>
                         </Box>
                     </Menu>
                 </Grid>

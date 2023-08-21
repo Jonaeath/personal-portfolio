@@ -6,17 +6,12 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 function App() {
   return (
     <BrowserRouter>
-    
-    <section id="home">
-    <Home/>
-    </section>
-    <section>
-      <AboutMe/>
-    </section>
-  
-   
-   
-    
+      <section id="home">
+        <Home/>
+      </section>
+      <section id="aboutme">
+        <AboutMe />
+      </section>
     </BrowserRouter>
   );
 }
