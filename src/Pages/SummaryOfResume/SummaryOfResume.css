@@ -1,0 +1,16 @@
+.verticalLine {
+    border-left: 6px solid #cddc39;
+    height: 280px;
+    position: absolute;
+    margin-right: 2rem;
+
+
+
+}
+
+.horizontalLine{
+    border-bottom: 5px solid black;
+    width: 90%;
+    height: 5px;
+    line-height: 80%;
+}

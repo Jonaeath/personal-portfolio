@@ -11,7 +11,7 @@ const Home = () => {
             pb:'5rem'
 
         }}>
-           <Navbar></Navbar>
+           <Navbar sx={{position:'fixed'}}></Navbar>
            <Banner></Banner>
            </Box>   
         </section>

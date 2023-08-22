@@ -24,53 +24,55 @@ export default function Navbar() {
     return (
 
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{textAlign:'center'}} >
-                <Grid xs={6} display='flex'  alignItems = "center" justifyContent='center'>
-                    <PersonIcon  sx={{pr:'.25rem'}} />
-                    <Typography variant="h6" component="div" sx={{fontWeight:'700' }}>
-                       JONAEATH HOSSIN
-                   </Typography>
+                <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ textAlign: 'center' }} >
+                    <Grid xs={6} display='flex' alignItems="center" justifyContent='center'>
+                        <PersonIcon sx={{ pr: '.25rem' }} />
+                        <Typography variant="h6" component="div" sx={{ fontWeight: '700' }}>
+                            JONAEATH HOSSIN
+                        </Typography>
 
-                </Grid>
-                <Grid xs={6} display='flex' alignItems = "center" justifyContent='center'>
-                <EmailIcon sx={{pr:'.25rem'}}/>
-                    <Typography variant="h6" component="div" sx={{ pr: '1.25rem',fontWeight:'700' }}>
-                        jonaeathbcc18@gmail.com
-                    </Typography>
-                    <IconButton
-                        size="large"
-                        aria-label="account of current user"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleMenu}
-                        color="inherit"
-                    >
-                        <MenuIcon/>
-                    </IconButton>
+                    </Grid>
+                    <Grid xs={6} display='flex' alignItems="center" justifyContent='center'>
+                        <EmailIcon sx={{ pr: '.25rem' }} />
+                        <Typography variant="h6" component="div" sx={{ pr: '1.25rem', fontWeight: '700' }}>
+                            jonaeathbcc18@gmail.com
+                        </Typography>
+                        <IconButton
+                            size="large"
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenu}
+                            color="inherit"
+                        >
+                            <MenuIcon />
+                        </IconButton>
 
-                    <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorEl}
-                        anchorOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                        }}
-                        open={Boolean(anchorEl)}
-                        onClose={handleClose}
-                    >
-                        <Box>
-                            <Link to='home'>Home</Link>
-                            <br />
-                            <Link to='aboutme'>About Me</Link>
-                        </Box>
-                    </Menu>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={Boolean(anchorEl)}
+                            onClose={handleClose}
+                        >
+                            <Box>
+                       
+                               <Link to='/'>Home</Link>
+                                <br />
+                                <Link to='/aboutme'>About Me</Link>
+                        
+                            </Box>
+                        </Menu>
+                    </Grid>
                 </Grid>
-            </Grid>
         </Box>
 
     );
