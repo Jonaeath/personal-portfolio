@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import './SummaryOfResume.css';
+import Skill from './Skills/Skill';
 
 
 
@@ -10,7 +11,7 @@ const SummaryOfResume = () => {
     return (
         <section>
             <Box>
-                <Grid p='5rem' sx={{backgroundColor:'#c5cae9',height:'35rem',m:'5rem',borderRadius:'2rem'}}>
+                <Grid p='4rem' sx={{backgroundColor:'#c5cae9',height:'35rem',m:'5rem',borderRadius:'2rem'}}>
                     <Grid>
                         <Typography sx={{ textAlign: 'center',fontWeight:'bold'}} variant="h6" component="h2">Resume</Typography>
                         <Typography sx={{ textAlign: 'center',fontWeight:'bold'}} variant="h3" component="h2">A summary of My Resume</Typography>
@@ -58,6 +59,7 @@ const SummaryOfResume = () => {
                         </Grid>
                     </Grid>
                 </Grid>
+                <Skill/>
             </Box>
         </section>
     );

@@ -1,0 +1,155 @@
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid #ffeb3b;
+    border-radius: 20px;
+
+}
+#web-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#web-bar{
+    animation: web-fill 2s forwards;
+}
+@keyframes web-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+#java-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+
+#react-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#react-bar{
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill{
+    100%{
+        width: 85%;
+    }
+}
+
+#node-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#node-bar{
+    animation: node-fill 2s forwards;
+}
+@keyframes node-fill{
+    100%{
+        width: 50%;
+    }
+}
+
+#mui-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#mui-bar{
+    animation: mui-fill 2s forwards;
+}
+@keyframes mui-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+#tw-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#tw-bar{
+    animation: tw-fill 2s forwards;
+}
+@keyframes tw-fill{
+    100%{
+        width: 85%;
+    }
+}
+
+
+#bt-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#bt-bar{
+    animation: bt-fill 2s forwards;
+}
+@keyframes bt-fill{
+    100%{
+        width: 85%;
+    }
+}
+
+#hc-bar{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+}
+
+#hc-bar{
+    animation: hc-fill 2s forwards;
+}
+@keyframes hc-fill{
+    100%{
+        width: 90%;
+    }
+}
