@@ -7,9 +7,9 @@ import './Skill.css'
 const Skill = () => {
     return (
         <Box>
-            <Grid container pr='5rem' pb='5rem' pl='5rem'   >
+            <Grid container  pt='4rem' pr='4rem' pl='6rem' pb='5rem' columns={{ xs: 4, sm: 8, md: 12 }}>
             <Typography sx={{fontWeight:'bold',pb:'2rem',fontSize:'2rem'}} >MY SKILLS</Typography>
-                <Grid container>
+                <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid xs={6} pr='2rem' >
                         <Box className='skill'>
                             <Box className='details'>
