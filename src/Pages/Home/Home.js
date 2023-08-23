@@ -6,12 +6,13 @@ import Banner from './Banner/Banner';
 const Home = () => {
     return (
         <section>
-           <Box sx={{backgroundColor:'#cddc39',
+           <Box style={{backgroundColor:'#cddc39',
             height:'100%',
-            pb:'5rem'
+            pb:'5rem',
+            position:'relative'
 
         }}>
-           <Navbar sx={{position:'fixed'}}></Navbar>
+           <Navbar style={{position: 'absolute', top:0}}></Navbar>
            <Banner></Banner>
            </Box>   
         </section>

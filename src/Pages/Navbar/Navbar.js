@@ -23,8 +23,8 @@ export default function Navbar() {
 
     return (
 
-        <Box sx={{ flexGrow: 1 }}>
-                <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ textAlign: 'center' }} >
+        <Box sx={{ flexGrow: 1, }}>
+                <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ textAlign: 'center',  }} >
                     <Grid xs={6} display='flex' alignItems="center" justifyContent='center'>
                         <PersonIcon sx={{ pr: '.25rem' }} />
                         <Typography variant="h6" component="div" sx={{ fontWeight: '700' }}>
@@ -73,7 +73,7 @@ export default function Navbar() {
                         </Menu>
                     </Grid>
                 </Grid>
-        </Box>
+         </Box>
 
     );
 }
